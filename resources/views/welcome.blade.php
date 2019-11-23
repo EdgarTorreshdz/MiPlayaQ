@@ -319,7 +319,7 @@ $("#ubicacion").css("display", "none");
             '</div>'+
           '</div>';
           }
-          contentString+=props.edgar==1?' Xido':' No Xido';
+          contentString+=props.edgar==1?' Playa Limpia':' Playa contaminada';
           
 
           var infoWindow = new google.maps.InfoWindow({
