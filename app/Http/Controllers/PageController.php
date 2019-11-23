@@ -196,7 +196,7 @@ class PageController extends Controller
 
     public function mustras($id){
 
-        $playasData = App\Playa::findOrFail($id);
+        $playasData = App\Encuesta::with('playa')->findOrFail($id);
 
         return view('mustras',compact('playasData'));
     }

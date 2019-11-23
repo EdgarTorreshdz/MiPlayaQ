@@ -25,17 +25,17 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="css/menu.css" rel="stylesheet">
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<link href="css/menu.css" rel="stylesheet">
-<link href="css/mapa.css" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link href="{{ asset('css/menu.css') }}" rel="stylesheet">
+<link href="{{ asset('css/mapa.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <link rel="stylesheet" href="">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/aos.css">
-<link rel="stylesheet" href="css/cartas.css">
-<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/jquery.fancybox.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/aos.css') }}">
+<link rel="stylesheet" href="{{ asset('css/cartas.css') }}">
+<link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
 
 
 </head>
@@ -44,7 +44,7 @@
         <nav class="navbar navbar-expand-md nav shadow-sm" style="height: auto;">
             <div class="container" >
                 <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="images/2076984.png" alt="" style="width:50px;">
+                <img src="{{ asset('images/2076984.png') }}" alt="" style="width:50px;">
                 <p class="F-logo">MI PLAYAQR</p>     
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -111,33 +111,7 @@
         </nav>
         </div>
 
-            
+            @yield('content')
  
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="images/fondo.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="images/img2.jpeg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="images/img4.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-@yield('content')
+    
 
