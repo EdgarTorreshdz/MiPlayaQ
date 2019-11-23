@@ -11,8 +11,8 @@ var menosCincuenta = parseInt("{{$playasData->menosCincuenta}}")
 var menosCien = parseInt("{{$playasData->menosCien}}")
 var masCien = parseInt("{{$playasData->masCien}}")
 
-var total = hombre+sargazo+organica+inorganica+mucha
-var porcentaje = total/5
+var total = mucha+menosCincuenta+menosCien+masCien
+var porcentaje = total/4
 var pHombre = (hombre*100)/total
 var pSargazo = (sargazo*100)/total
 var pOrganica = (organica*100)/total
@@ -31,7 +31,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	title: {
 		
-		text: "Basura en la playa "+nombre
+		text: "Personas que visitan "+nombre
 	},
 	data: [{
 		type: "pie",
@@ -39,11 +39,10 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		yValueFormatString: "##0.00\"%\"",
 		indexLabel: "{label} {y}",
 		dataPoints: [
-			{y: pHombre, label: "Basura generada por el hombre"},
-			{y: pSargazo, label: "Basura generada por le sargazo"},
-			{y: pOrganica, label: "Basura organica "},
-			{y: pInorganica, label: "Basura inorganica"},
-			{y: pMucha, label: "Cantidad de basura"},
+			
+			{y: pMenosCincuenta, label: "Menos de cincuenta personas"},
+			{y: pMenosCien, label: "Entre cincuenta y cien personas "},
+			{y: pMasCien, label: "Más de cien personas"},
 		]
 	}]
 });

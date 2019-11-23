@@ -52,3 +52,4 @@ Route::post('/encuestaok/{id}', 'PageController@encuestaupdate')->name('encuesta
 
 
 Route::get('/encuesta/{id}','PageController@mustras')->name('mustras');
+Route::get('/enc/{id}','PageController@visitantes')->name('visitantes');

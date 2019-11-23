@@ -200,5 +200,10 @@ class PageController extends Controller
 
         return view('mustras',compact('playasData'));
     }
+    public function visitantes($id){
 
+        $playasData = App\Encuesta::with('playa')->findOrFail($id);
+
+        return view('visitantes',compact('playasData'));
+    }
 }
