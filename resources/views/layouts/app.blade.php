@@ -62,11 +62,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar sesión') }}</a>
+                                <a class="nav-link font-size-22" href="{{ route('login') }}">{{ __('Iniciar sesión') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registro') }}</a>
+                                    <a class="nav-link font-size-22" href="{{ route('register') }}">{{ __('Registro') }}</a>
                                 </li>
                             @endif
                             
@@ -75,20 +75,20 @@
                             
                             @if(Auth::user()->permiso==2)
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('playas') }}">{{ __('Playas') }}</a>
+                                <a class="nav-link font-size-22" href="{{ route('playas') }}">{{ __('Playas') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link badge" href="{{ route('topPlayas') }}">{{ __('Top playas') }}</a>
+                                <a class="nav-link font-size-22" href="{{ route('topPlayas') }}">{{ __('Top playas') }}</a>
                             </li>
                             @endif
                             
                             @if(Auth::user()->permiso==1)
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('admin') }}">{{ __('Panel') }}</a>
+                                <a class="nav-link font-size-22" href="{{ route('admin') }}">{{ __('Panel') }}</a>
                             </li>
                             @endif
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link font-size-22 dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 

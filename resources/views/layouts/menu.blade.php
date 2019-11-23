@@ -10,7 +10,7 @@
             <span class="icon-cog"></span>
         </div>
         <div class="sub-menu_3">
-              <a class="icon-exit"
+              <a class="icon-exit font-size-22"
                   onclick="event.preventDefault();
                        document.getElementById('logout-form').submit();">
                   </a>
