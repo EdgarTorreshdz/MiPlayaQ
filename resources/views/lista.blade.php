@@ -7,7 +7,7 @@
         <nav>
             <li>
               <br>
-            <a href="/admin"><span class="icon-home"></span>
+            <a href="/admin"><span class="icon-home "></span>
                 <br>
                 Home</a>
             </li>
