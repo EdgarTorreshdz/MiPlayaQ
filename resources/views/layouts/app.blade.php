@@ -37,6 +37,8 @@
 <link rel="stylesheet" href="{{ asset('css/cartas.css') }}">
 <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
 
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 
 </head>
 <body>

@@ -4,7 +4,8 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12 text-center" >
-          <h2 class="subscribe-title">¡Playas Recomendadas!</h2>
+          <h2 class="subscribe-title"><i class="fas fa-medal"></i>
+            ¡Playas Recomendadas!<i class="fas fa-medal"></i></h2>
         </div>
       </div>
     </div>
@@ -17,7 +18,7 @@
 @foreach($encuesta as $recorrido)
   <div id="carta" class="card mb-3">
     <div class="card-body">
-      <h4 class="card-title text-center">{{$recorrido->playa->nombre}} <?php if(($recorrido->playa->bandera)==1) {
+      <h4 class="card-title text-center"><i class='fas fa-medal'></i>{{$recorrido->playa->nombre}} <?php if(($recorrido->playa->bandera)==1) {
                 echo '<img src="images/banV.png" alt="">';
             }else if(($recorrido->playa->bandera)==2) {
               echo '<img src="images/banA.png" alt="">';
@@ -37,11 +38,11 @@
       <br>
       <a href="/playas/{{$recorrido->id}}"><img class="card-img-top" src="images/delfines.jpg" alt=""></a>
       
-            <p class="card-text">Estacionamiento: {{$recorrido->playa->estacionamiento}}</p>
-            <p class="card-text">Estado de la republica: {{$recorrido->playa->ubicacion}}</p>
-            <p class="card-text">Evento actual: {{$recorrido->playa->evento}}</p>
-            <p class="card-text">Votos positivos: {{$recorrido->votospositivos}}</p>
-            <p class="card-text">Votos negativos {{$recorrido->votosnegativos}}</p>
+            <p class="card-text font-size-18">Estacionamiento: {{$recorrido->playa->estacionamiento}}</p>
+            <p class="card-text font-size-18">Estado de la republica: {{$recorrido->playa->ubicacion}}</p>
+            <p class="card-text font-size-18">Evento actual: {{$recorrido->playa->evento}}</p>
+            <p class="card-text font-size-18">Votos positivos: {{$recorrido->votospositivos}}</p>
+            <p class="card-text font-size-18">Votos negativos {{$recorrido->votosnegativos}}</p>
 
 
     </div>

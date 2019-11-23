@@ -61,11 +61,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link font-size-22" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link font-size-22" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                             
@@ -74,21 +74,21 @@
                             
                             @if(Auth::user()->permiso==2)
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('playas') }}">{{ __('Playas') }}</a>
+                                <a class="nav-link font-size-22" href="{{ route('playas') }}">{{ __('Playas') }}</a>
                             </li>
                             @endif
                             
                             @if(Auth::user()->permiso==1)
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('admin') }}">{{ __('Panel') }}</a>
+                                <a class="nav-link font-size-22" href="{{ route('admin') }}">{{ __('Panel') }}</a>
                             </li>
                             @endif
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link font-size-22 dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu font-size-22 dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -135,20 +135,20 @@
     <!--  PREGUNTA 1  -->
     <section class="row">
       <div class="col-md-6">
-        <p>1- ¿Qué clase de contaminante hay?</p>
+        <p class="font-size-22">1- ¿Qué clase de contaminante hay?</p>
       </div>
       <div class="col-md-2">
-        <label class="radio">
+        <label class="radio font-size-18">
         <input type="radio" name="pregunta1" id="pregunta1a" value="SI"> Generados por el hombre
       </label>
       </div>
       <div class="col-md-2">
-        <label class="radio">
+        <label class="radio font-size-18">
         <input type="radio" name="pregunta1" id="preguntab" value="NO"> Sargazo
       </label>
       </div>
       <div class="col-md-2">
-        <label class="radio">
+        <label class="radio font-size-18">
         <input type="radio" name="pregunta1" id="preguntac" value="NA"> N/A
       </label>
       </div>
@@ -156,20 +156,20 @@
     <!--  PREGUNTA 2  -->
     <section class="row">
       <div class="col-md-6">
-        <p>2-¿Qué tipo de basura hay en la playa? </p>
+        <p class="font-size-22">2-¿Qué tipo de basura hay en la playa? </p>
       </div>
       <div class="col-md-2">
-        <label class="radio">
+        <label class="radio font-size-18">
         <input type="radio" name="pregunta2" id="pregunta1a" value="SI"> Organico
       </label>
       </div>
       <div class="col-md-2">
-        <label class="radio">
+        <label class="radio font-size-18">
         <input type="radio" name="pregunta2" id="preguntab" value="NO"> Inorganico
       </label>
       </div>
       <div class="col-md-2">
-        <label class="radio">
+        <label class="radio font-size-18">
         <input type="radio" name="pregunta2" id="preguntac" value="NA"> N/A
       </label>
       </div>
@@ -177,20 +177,20 @@
     <!--  PREGUNTA 3  -->
     <section class="row">
       <div class="col-md-6">
-        <p>3- ¿Hay mucha basura? </p>
+        <p class="font-size-22">3- ¿Hay mucha basura? </p>
       </div>
       <div class="col-md-2">
-        <label class="radio">
+        <label class="radio font-size-18">
         <input type="radio" name="pregunta3" id="pregunta1a" value="SI"> Si
       </label>
       </div>
       <div class="col-md-2">
-        <label class="radio">
+        <label class="radio font-size-18">
         <input type="radio" name="pregunta3" id="preguntab" value="NO"> No
       </label>
       </div>
       <div class="col-md-2">
-        <label class="radio">
+        <label class="radio font-size-18">
         <input type="radio" name="pregunta3" id="preguntac" value="NA"> N/A
       </label>
       </div>
@@ -198,7 +198,7 @@
     <!--  PREGUNTA 4  -->
     <section class="row">
       <div class="col-md-6">
-        <p>4- Aproximadamente ¿Cuánta gente hay?</p>
+        <p class="font-size-22">4- Aproximadamente ¿Cuánta gente hay?</p>
       </div>
       <div class="col-md-2">
         <label class="radio">
