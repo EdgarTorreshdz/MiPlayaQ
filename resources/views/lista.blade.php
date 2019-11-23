@@ -78,6 +78,7 @@
       <td>{{$recorrido->bandera}}</td>
       <td>
       <a href="{{ route('playas.editar', $recorrido->id)}}" class="btn btn-warning btn-sm">Editar</a>
+      <a href="{{ route('mustras', $recorrido->id)}}" class="btn btn-warning btn-sm">Mustras</a>
 
       <form action="{{route('playas.eliminar',$recorrido->id)}}" method="POST" >
         @csrf

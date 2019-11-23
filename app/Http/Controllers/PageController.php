@@ -191,4 +191,14 @@ class PageController extends Controller
     public function encuestaRealizada(){
         return view('encuestaRealizada');
     }
+
+
+
+    public function mustras($id){
+
+        $playasData = App\Playa::findOrFail($id);
+
+        return view('mustras',compact('playasData'));
+    }
+
 }

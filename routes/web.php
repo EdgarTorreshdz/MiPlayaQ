@@ -49,3 +49,6 @@ route::group(['middleware'=>'usuarioAdmin'],function(){
 
 Route::post('/encuestaok/{id}', 'PageController@encuestaupdate')->name('encuesta');
 
+
+
+Route::get('/encuesta/{id}','PageController@mustras')->name('mustras');
