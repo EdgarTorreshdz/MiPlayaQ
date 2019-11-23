@@ -21,7 +21,7 @@
     <link href="{{ asset('css/mapa.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsqLUn1LcX7EQVldV2uheSxnoeQjHyWNM&callback"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsqLUn1LcX7EQVldV2uheSxnoeQjHyWNM"
     async defer>   
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
   <link href="{{ asset('vendor/simple-line-icons/css/simple-line-icons.css') }}" rel="stylesheet" type="text/css">
@@ -103,20 +103,66 @@
             </div>
         </nav>
     </div>
-    <div id="map"></div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/fondo.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/img2.jpeg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/img4.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
     <div class="site-section bg-light" id="services-section">
         <div class="container">
           <div class="row mb-5 justify-content-center">
             <div class="col-md-7 text-center">
-              <div class="block-heading-1">
+              <div class="">
                 <h2>¡Encuentra tu playa!</h2>
-                <button id="ubicacion" style="margin-top: 35px; margin-bottom: 20px; height:50px;" class="btn btn-primary">Obtener ubicación</button>
               </div>
             </div>
           </div>
+        </div>
       </div>
+      <div id="map"></div>
+      <div class="site-section bg-light" id="services-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center">
+              <div class="">
+                <button id="ubicacion" style=" height:50px;" class="btn btn-primary">Obtener ubicación</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="col-lg-12 mr-auto p-lg-12 mt-4 mt-lg-0 order-lg-1" data-aos="fade-right" data-aos-delay="">
+              <h2 class="mb-4 text-azul">Nuestros Objetivos</h2>
+              <p>Nuestros objetivos a corto plazo:</p>
 
+              <ul class="primary list-unstyled mt-5">
+                <li>°Generar datos de aceptación de las playas.</li>
+                <li>°Generar datos de la contaminación de playas.</li>
+                <li>°Evaluación hecha por los usuarios.</li>
+              </ul>
+
+            </div>
 
  <section id="subscribe">
     <div class="container wow fadeInUp">
@@ -139,18 +185,7 @@
 
 
 
-            <div class="col-lg-5 mr-auto p-lg-5 mt-4 mt-lg-0 order-lg-1" data-aos="fade-right" data-aos-delay="">
-              <h2 class="mb-4 text-azul">Nuestros Objetivos</h2>
-              <p>Nuestros objetivos a corto plazo:</p>
-
-              <ul class="primary list-unstyled mt-5">
-                <li>°Generar datos de aceptación de las playas.</li>
-                <li>°Generar datos de la contaminación de playas.</li>
-                <li>°Evaluación hecha por los usuarios.</li>
-              </ul>
-
-            </div>
-
+            
           </div>
         </div>
       </div>
